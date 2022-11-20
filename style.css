@@ -1,0 +1,59 @@
+body{
+    background-image: url('images/space.jpg');
+    font-family: 'Arial', sans-serif;
+    background-repeat: no-repeat;
+}
+
+.clock{
+    position: relative;
+    margin: 0 auto;
+    margin-top: calc(50vh - 250px);
+    width: 500px;
+    height: 500px;
+    border-radius: 500px;
+    background-color: rgba(0, 0, 0, .6);
+    border: solid 30px rgba(0, 192, 255, .75);
+    transition: border-color 5s;
+}
+
+.number{
+    margin: 0;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    width: 50%;
+    height: 28px;
+    top: calc(50% - 14px);
+    left: calc(50% - 14px);
+    text-align: right;
+    transform-origin: 14px;
+}
+
+.number span{
+    display: inline-block;
+}
+
+.hand{
+    width: 40%;
+    height: 7px;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 1s linear;
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, .1);
+    /* transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1); */
+}
+
+.hand.hour{
+    height: 11px;
+    width: 35%;
+    left: 15%;
+}
+
+.hand.second{
+    height: 2px;
+}
